@@ -21,7 +21,7 @@ composer require superscript/interval
 You can create intervals from string notation:
 
 ```php
-use Superscript\Interval\MonetaryInterval;
+use Superscript\MonetaryInterval\MonetaryInterval;
 
 // Create from string notation
 $interval = MonetaryInterval::fromString('[USD 1.00,USD 5.00]');  // Closed interval

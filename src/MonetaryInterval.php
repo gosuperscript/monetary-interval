@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Superscript\Interval;
+namespace Superscript\MonetaryInterval;
 
 use Brick\Math\BigNumber;
 use Brick\Money\Money;

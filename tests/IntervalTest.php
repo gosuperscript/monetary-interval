@@ -1,14 +1,14 @@
 <?php
 
-namespace Superscript\Interval\Tests;
+namespace Superscript\MonetaryInterval\Tests;
 
 use InvalidArgumentException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
-use Superscript\Interval\IntervalNotation;
-use Superscript\Interval\MonetaryInterval;
+use Superscript\MonetaryInterval\IntervalNotation;
+use Superscript\MonetaryInterval\MonetaryInterval;
 
 #[CoversClass(MonetaryInterval::class)]
 #[CoversClass(IntervalNotation::class)]
