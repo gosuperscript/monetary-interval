@@ -153,4 +153,15 @@ class IntervalTest extends TestCase
             ['[GBP 2.00,)'],
         ];
     }
+
+    #[Test]
+    public function it_can_compare_two_intervals(): void
+    {
+        $interval1 = MonetaryInterval::fromString('[GBP 1.00,GBP 2.00]');
+        $interval2 = MonetaryInterval::fromString('[GBP 1.00,GBP 2.00]');
+        $this->assertTrue($interval1->isEqualTo($interval2));
+
+        $interval3 = MonetaryInterval::fromString('(GBP 1.00,GBP 2.00)');
+        $this->assertFalse($interval1->isEqualTo($interval3));
+    }
 }
