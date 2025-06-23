@@ -84,6 +84,11 @@ class MonetaryInterval implements Stringable
         return $this->left->isGreaterThanOrEqualTo($value);
     }
 
+    public function isEqualTo(MonetaryInterval $interval): bool
+    {
+        return $this->left->isEqualTo($interval->left) && $this->right->isEqualTo($interval->right) && $this->notation === $interval->notation;
+    }
+
     public function __toString(): string
     {
         $left = $this->left->isEqualTo(PHP_INT_MIN) ? null : $this->left;

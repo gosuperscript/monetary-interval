@@ -1,0 +1,8 @@
+services:
+  php:
+    image: superscript/monetary-interval
+    build:
+      context: .
+    volumes:
+      - .:/app
+    working_dir: /app
