@@ -2,7 +2,7 @@
     "name": "gosuperscript/monetary-interval",
     "type": "library",
     "license": "MIT",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "autoload": {
         "psr-4": {
             "Superscript\\MonetaryInterval\\": "src/"
