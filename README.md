@@ -7,7 +7,7 @@ A PHP library for working with monetary intervals. It provides an elegant way to
 Install the package via Composer:
 
 ```bash
-composer require superscript/interval
+composer require gosuperscript/monetary-interval
 ```
 
 ## Requirements
